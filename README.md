@@ -11,7 +11,7 @@ This HTML page introduces Fenet Damen, a software engineering student from Ethio
 ## How to Use
 
 1. Copy the HTML code.
-2. Save it as `about_me.html`.
+2. Save it as `about.html`.
 3. Open in a web browser.
 
 ## License
