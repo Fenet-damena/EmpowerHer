@@ -27,7 +27,18 @@
             <label for="age">Age:</label>
             <input type="number" id="age" name="age" min="1" required>
         </div>
-        
+        <div class="form-group">
+            <label>Availability (Days of the Week):</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="availability" value="monday"> Monday</label>
+                <label><input type="checkbox" name="availability" value="tuesday"> Tuesday</label>
+                <label><input type="checkbox" name="availability" value="wednesday"> Wednesday</label>
+                <label><input type="checkbox" name="availability" value="thursday"> Thursday</label>
+                <label><input type="checkbox" name="availability" value="friday"> Friday</label>
+                <label><input type="checkbox" name="availability" value="saturday"> Saturday</label>
+                <label><input type="checkbox" name="availability" value="sunday"> Sunday</label>
+            </div>
+        </div>
         <div class="form-group">
             <label for="interests">Areas of Interest:</label>
             <textarea id="interests" name="interests" rows="4" placeholder="Please describe your interests..."></textarea>
