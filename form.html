@@ -10,7 +10,34 @@
 
 <div class="form-container">
     <h2>Volunteer Activity Application Form</h2>
-  
+    <form>
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="interests">Areas of Interest:</label>
+            <textarea id="interests" name="interests" rows="4" placeholder="Please describe your interests..."></textarea>
+        </div>
+        <div class="form-group">
+            <label for="motivation">Why do you want to volunteer?</label>
+            <textarea id="motivation" name="motivation" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit Application</button>
+    </form>
 </div>
 
 </body>
