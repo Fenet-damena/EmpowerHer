@@ -3,113 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volunteer Activity Application Form</title>
+    <title>Form Example</title>
     <style>
         body {
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-image: url('formbackground.jpg'); 
-            background-size: cover; 
-            background-position: center; 
-            background-repeat: no-repeat; 
         }
         .form-container {
-            max-width: 600px;
-            margin: auto;
-            background: rgba(255, 255, 255, 0.8); 
+            background-color: white;
             padding: 20px;
-            border-radius: 5px;
+            border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
         }
-        h2 {
+        .form-container h2 {
             text-align: center;
+            margin-bottom: 20px;
         }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        input[type="text"],
-        input[type="email"],
-        input[type="number"],
-        textarea {
+        .form-container input {
             width: 100%;
             padding: 10px;
+            margin: 10px 0;
             border: 1px solid #ccc;
             border-radius: 4px;
         }
-        .checkbox-group {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .checkbox-group label {
-            margin-right: 15px;
-        }
-        button {
+        .form-container button {
             width: 100%;
             padding: 10px;
-            background-color: #28a745;
+            background-color: #6200ea;
             color: white;
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            font-size: 16px;
         }
-        button:hover {
-            background-color: #218838;
+        .form-container button:hover {
+            background-color: #3700b3;
         }
-        @media (max-width: 600px) {
-            .form-container {
-                padding: 15px;
-            }
+        .password-note {
+            font-size: 12px;
+            color: #666;
+            padding-bottom: 10px;
+            
         }
     </style>
 </head>
 <body>
 
 <div class="form-container">
-    <h2>Volunteer Activity Application Form</h2>
-    <form>
-        <div class="form-group">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-            <label for="phone">Phone Number:</label>
-            <input type="text" id="phone" name="phone" required>
-        </div>
-        <div class="form-group">
-            <label for="age">Age:</label>
-            <input type="number" id="age" name="age" min="1" required>
-        </div>
-        <div class="form-group">
-            <label>Availability (Days of the Week):</label>
-            <div class="checkbox-group">
-                <label><input type="checkbox" name="availability" value="monday"> Monday</label>
-                <label><input type="checkbox" name="availability" value="tuesday"> Tuesday</label>
-                <label><input type="checkbox" name="availability" value="wednesday"> Wednesday</label>
-                <label><input type="checkbox" name="availability" value="thursday"> Thursday</label>
-                <label><input type="checkbox" name="availability" value="friday"> Friday</label>
-                <label><input type="checkbox" name="availability" value="saturday"> Saturday</label>
-                <label><input type="checkbox" name="availability" value="sunday"> Sunday</label>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="interests">Areas of Interest:</label>
-            <textarea id="interests" name="interests" rows="4" placeholder="Please describe your interests..."></textarea>
-        </div>
-        <div class="form-group">
-            <label for="motivation">Why do you want to volunteer?</label>
-            <textarea id="motivation" name="motivation" rows="4" required></textarea>
-        </div>
-        <button type="submit">Submit Application</button>
-    </form>
+    <h2>Get Started</h2>
+    <input type="text" placeholder="Enter your name" required>
+    <input type="email" placeholder="Enter your email" required>
+    <input type="password" placeholder="Create password" required>
+    <div class="password-note">Must be at least 8 characters</div>
+    <button type="submit">Get Started</button>
 </div>
 
 </body>
